@@ -1,0 +1,63 @@
+{
+    "case1": {
+        "testcase_name": "field nama kosong",
+        "data": {
+            "name": "",
+            "email": "telagamuhamad@gmail.com",
+            "password": "Telaga14",
+            "re-password": "Telaga14"
+        },
+        "expected": {
+            "pesan": "Nama Tidak boleh kosong"
+        }
+    },
+
+    "case2": {
+        "testcase_name": "field email tidak sesuai aturan",
+        "data": {
+            "name": "Muhammad Telaga",
+            "email": "telagamuhamad",
+            "password": "Telaga14",
+            "re-password": "Telaga14"
+        },
+        "expected": {
+            "pesan": "Email yang kamu masukkan tidak valid"
+        }
+    },
+    "case3" : {
+        "testcase_name": "field password tidak sesuai aturan",
+        "data": {
+            "name": "Muhammad Telaga",
+            "email": "telagamuhamad@gmail.com",
+            "password": "telaga14",
+            "re-password": "Telaga14"
+        },
+        "expected": {
+            "pesan": "Harap sertakan setidaknya satu huruf | kapital Harap sertakan setidaknya satu angka | Kata sandi setidaknya harus terdiri dari 6 karakter"
+        }
+    },
+    "case4" : {
+        "testcase_name": "isi field re-password tidak sama dengan field password",
+        "data": {
+            "name": "Muhammad Telaga",
+            "email": "telagamuhamad@gmail.com",
+            "password": "Telaga14",
+            "re-password": "telaga14"
+        },
+        "expected": {
+            "pesan": "Kata sandi yang diberikan tidak cocok"
+        }
+    },
+    "case5" : {
+        "testcase_name": "semua field terisi dengan benar",
+        "data": {
+            "name": "Muhammad Telaga",
+            "email": "telagamuhamad@gmail.com",
+            "password": "Telaga14",
+            "re-password": "Telaga14"
+        },
+        "expected": {
+            "pesan": "Pendaftaran berhasil!"
+        }
+    }
+}
